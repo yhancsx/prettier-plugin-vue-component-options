@@ -1,0 +1,26 @@
+<script>
+export default {
+  beforeCreate: {},
+  created: {},
+  model: {},
+  props: {},
+  watch: {},
+  updated: {},
+  data: {},
+  apollo: {},
+  computed: {},
+  methods: {},
+  beforeDestroy: {},
+  destroyed: {},
+  title: {},
+  $_veeValidate: {},
+  inject: {},
+  filters: {},
+  mixins: {},
+  name: {},
+  mounted: {},
+  beforeRouteLeave: {},
+  components: {},
+  directives: {},
+};
+</script>

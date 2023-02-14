@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sfc.vue 1`] = `
+<script>
+export default {
+  beforeCreate: {},
+  created: {},
+  model: {},
+  props: {},
+  watch: {},
+  updated: {},
+  data: {},
+  apollo: {},
+  computed: {},
+  methods: {},
+  beforeDestroy: {},
+  destroyed: {},
+  title: {},
+  $_veeValidate: {},
+  inject: {},
+  filters: {},
+  mixins: {},
+  name: {},
+  mounted: {},
+  beforeRouteLeave: {},
+  components: {},
+  directives: {},
+};
+</script>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<script>
+export default {
+  name: {},
+  title: {},
+  $_veeValidate: {},
+  inject: {},
+  mixins: {},
+  components: {},
+  directives: {},
+  filters: {},
+  model: {},
+  props: {},
+  data: {},
+  apollo: {},
+  computed: {},
+  methods: {},
+  watch: {},
+  beforeCreate: {},
+  created: {},
+  updated: {},
+  mounted: {},
+  beforeDestroy: {},
+  destroyed: {},
+  beforeRouteLeave: {},
+};
+</script>
+
+`;
+
+exports[`ts.vue 1`] = `
+<script lang="ts">
+import Vue from 'vue';
+
+export default Vue.extend({
+  beforeCreate: {},
+  created: {},
+  model: {},
+  beforeDestroy: {},
+  props: {},
+  watch: {},
+  updated: {},
+  data: {},
+  apollo: {},
+  computed: {},
+  methods: {},
+  inject: {},
+  destroyed: {},
+  title: {},
+  $_veeValidate: {},
+  mounted: {},
+  components: {},
+  directives: {},
+  filters: {},
+  beforeRouteLeave: {},
+  mixins: {},
+  name: {},
+});
+</script>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
+  name: {},
+  title: {},
+  $_veeValidate: {},
+  inject: {},
+  mixins: {},
+  components: {},
+  directives: {},
+  filters: {},
+  model: {},
+  props: {},
+  data: {},
+  apollo: {},
+  computed: {},
+  methods: {},
+  watch: {},
+  beforeCreate: {},
+  created: {},
+  updated: {},
+  mounted: {},
+  beforeDestroy: {},
+  destroyed: {},
+  beforeRouteLeave: {},
+});
+</script>
+
+`;
