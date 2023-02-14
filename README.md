@@ -1,75 +1,60 @@
-# Usage
+# prettier-plugin-vue-component-options
 
-## Prettier Options
+`prettier-plugin-vue-component-options` is a lightweight JavaScript plugin for sorting Vue component options in a specific order. It is a prettier plugin that sorts the following options:
 
-```json
-{
-  "optionOrders": [...]
-}
+- `name`
+- `mixins`
+- `components`
+- `directives`
+- `filters`
+- `model`
+- `emits`
+- `props`
+- `setup`
+- `data`
+- `computed`
+- `methods`
+- `watch`
+- `beforeCreate`
+- `created`
+- `beforeMount`
+- `mounted`
+- `beforeUpdate`
+- `updated`
+- `beforeDestroy`
+- `destroyed`
+- `beforeRouteLeave`
+
+This package is useful for developers who prefer to have their component options organized in a specific way, making it easier to read and maintain their code.
+
+## Installation
+
+You can install prettier-plugin-vue-component-options via npm or yarn.
+
+```bash
+npm install prettier-plugin-vue-component-options --save-dev
+
+yarn add prettier-plugin-vue-component-options --dev
 ```
 
-## Before
+## Usage
+
+Once `prettier-plugin-vue-component-options` is installed, you can use it as a prettier plugin to format your Vue component files. To change the order as desired, add the following configuration to your prettier.config.js file:
 
 ```js
-export default {
-  beforeCreate: {},
-  created: {},
-  model: {},
-  props: {},
-  watch: {},
-  updated: {},
-  data: {},
-  apollo: {},
-  computed: {},
-  methods: {},
-  beforeDestroy: {},
-  destroyed: {},
-  title: {},
-  $_veeValidate: {},
-  inject: {},
-  filters: {},
-  mixins: {},
-  name: {},
-  mounted: {},
-  beforeRouteLeave: {},
-  components: {},
-  directives: {},
+Copy code
+module.exports = {
+// ...
+  optionOrder: [/* your own order */],
 };
 ```
 
-## After
+This will sort your Vue component options in the order specified in the optionOrder array. If an option is not included in the array, it will be sorted alphabetically after the specified options.
 
-```js
-export default {
-  name: {},
-  title: {},
-  $_veeValidate: {},
-  inject: {},
-  mixins: {},
-  components: {},
-  directives: {},
-  filters: {},
-  model: {},
-  props: {},
-  data: {},
-  apollo: {},
-  computed: {},
-  methods: {},
-  watch: {},
-  beforeCreate: {},
-  created: {},
-  updated: {},
-  mounted: {},
-  beforeDestroy: {},
-  destroyed: {},
-  beforeRouteLeave: {},
-};
-```
+## Contributing
 
-# 배포
+Pull requests and issues are welcome. If you have any feature requests or bug reports, please open an issue on the GitHub repository.
 
-```
-npm version patch
-npm login --registry=http://registry.navercorp.com/api/npm/npm-naver/
-npm publish # 에러나는 경우 버전 확인
-```
+## License
+
+prettier-plugin-vue-component-options is licensed under the MIT License. See the LICENSE file for more information.

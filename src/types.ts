@@ -1,3 +1,3 @@
 export interface Options {
-  optionOrders: string[];
+  optionOrder: string[];
 }

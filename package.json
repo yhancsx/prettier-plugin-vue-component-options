@@ -1,13 +1,14 @@
 {
-  "name": "@ditto/prettier-plugin-vue-component-options",
-  "version": "0.0.2",
-  "description": "",
+  "name": "prettier-plugin-vue-component-options",
+  "version": "0.0.1",
+  "description": "A prettier plugins to sort vue component options",
   "main": "lib/src/index.js",
   "types": "lib/types.d.ts",
-  "publishConfig": {
-    "access": "public",
-    "registry": "http://registry.navercorp.com/api/npm/npm-naver/"
+  "repository": {
+    "url": "https://github.com/yhancsx/prettier-plugin-vue-component-options",
+    "type": "git"
   },
+  "homepage": "https://github.com/yhancsx/prettier-plugin-vue-component-options",
   "scripts": {
     "prepare": "yarn run compile",
     "compile": "tsc --declaration",
@@ -23,7 +24,7 @@
   ],
   "author": {
     "name": "Yohan Bae",
-    "email": "yhan.bae@navercorp.com"
+    "email": "yhancsx@gmail.com"
   },
   "files": [
     "lib",
@@ -36,7 +37,7 @@
     "@types/jscodeshift": "^0.11.6",
     "@vue/compiler-dom": "^3.2.47",
     "jscodeshift": "^0.14.0",
-    "prettier": "2.7.2"
+    "prettier": "2.8.4"
   },
   "devDependencies": {
     "@types/prettier": "^2.7.2",

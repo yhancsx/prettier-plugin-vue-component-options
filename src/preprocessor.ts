@@ -1,21 +1,21 @@
 import { Options } from './types';
 import { parse } from '@vue/compiler-dom';
 import jsc from 'jscodeshift';
-const babylon = require('@babel/parser');
+import * as babylon from '@babel/parser';
 
 export default function preprocess(code: string, options: Options) {
   const script = parse(code).children.find((node: any) => node.type === 1 && node.tag === 'script');
 
-  const { optionOrders } = options;
+  const { optionOrder } = options;
 
   const sortProperties = (a: any, b: any) => {
     const aName = a?.key?.name || '';
     const bName = b?.key?.name || '';
-    let aIndex = optionOrders.indexOf(aName);
+    let aIndex = optionOrder.indexOf(aName);
     if (aIndex === -1) {
       aIndex = 999;
     }
-    let bIndex = optionOrders.indexOf(bName);
+    let bIndex = optionOrder.indexOf(bName);
     if (bIndex === -1) {
       bIndex = 999;
     }
@@ -52,6 +52,7 @@ export default function preprocess(code: string, options: Options) {
       return `${pre}${replaced}${post}`;
     }
   }
+  return code;
 }
 
 const parser = {
