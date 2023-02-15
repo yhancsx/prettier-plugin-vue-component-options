@@ -28,18 +28,29 @@ export default function preprocess(code: string, options: Options) {
   if (script?.type === 1 && script.children[0].type === 2) {
     const { content, loc } = script.children[0];
     const root = jsc(content, { parser });
+
     root
       .find(jsc.ExportDefaultDeclaration)
       .nodes()
       .forEach(({ declaration }) => {
         if (declaration.type === 'ObjectExpression') {
+          // sfc
           declaration.properties = declaration.properties.slice().sort(sortProperties);
         } else if (
+          // vue2 ts
           declaration.type === 'CallExpression' &&
           declaration.callee.type === 'MemberExpression' &&
           declaration.callee.object.type === 'Identifier' &&
           declaration.callee.property.type === 'Identifier' &&
           declaration.callee.property.name === 'extend' &&
+          declaration.arguments[0]?.type === 'ObjectExpression'
+        ) {
+          declaration.arguments[0].properties = declaration.arguments[0].properties.slice().sort(sortProperties);
+        } else if (
+          // vue3 ts
+          declaration.type === 'CallExpression' &&
+          declaration.callee.type === 'Identifier' &&
+          declaration.callee.name === 'defineComponent' &&
           declaration.arguments[0]?.type === 'ObjectExpression'
         ) {
           declaration.arguments[0].properties = declaration.arguments[0].properties.slice().sort(sortProperties);

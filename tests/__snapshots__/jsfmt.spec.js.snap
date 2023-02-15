@@ -101,3 +101,40 @@ export default Vue.extend({
 </script>
 
 `;
+
+exports[`vue3ts.vue 1`] = `
+<script>
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  props: {},
+  watch: {},
+  methods: {},
+  data() {},
+  mounted() {},
+  setup() {},
+  components: {},
+  emits: [],
+  created() {},
+  name: {},
+});
+</script>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<script>
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  name: {},
+  components: {},
+  emits: [],
+  props: {},
+  setup() {},
+  data() {},
+  methods: {},
+  watch: {},
+  created() {},
+  mounted() {},
+});
+</script>
+
+`;
