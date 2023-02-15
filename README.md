@@ -56,4 +56,4 @@ Pull requests and issues are welcome. If you have any feature requests or bug re
 
 ## License
 
-`prettier-plugin-vue-component-options` is licensed under the MIT License. See the LICENSE file for more information.
+`prettier-plugin-vue-component-options` is licensed under the MIT License. See the [LICENSE](https://github.com/yhancsx/prettier-plugin-vue-component-options/blob/master/LICENSE) file for more information.
