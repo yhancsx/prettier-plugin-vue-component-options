@@ -42,7 +42,6 @@ yarn add prettier-plugin-vue-component-options --dev
 Once `prettier-plugin-vue-component-options` is installed, you can use it as a prettier plugin to format your Vue component files. To change the order as desired, add the following configuration to your prettier.config.js file:
 
 ```js
-Copy code
 module.exports = {
 // ...
   optionOrder: [/* your own order */],
@@ -57,4 +56,4 @@ Pull requests and issues are welcome. If you have any feature requests or bug re
 
 ## License
 
-prettier-plugin-vue-component-options is licensed under the MIT License. See the LICENSE file for more information.
+`prettier-plugin-vue-component-options` is licensed under the MIT License. See the LICENSE file for more information.
