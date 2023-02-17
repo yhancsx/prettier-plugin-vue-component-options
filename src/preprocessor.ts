@@ -56,7 +56,9 @@ export default function preprocess(code: string, options: Options) {
           declaration.arguments[0].properties = declaration.arguments[0].properties.slice().sort(sortProperties);
         }
       });
-    const replaced = root.toSource();
+    const regex = new RegExp(`(\,)\n{2,}(\\s*(?:${optionOrder.join('|')})[:(])`, 'g')
+    const replaced = root.toSource().replace(regex, '$1\n$2')
+
     if (content !== replaced) {
       const pre = code.substring(0, loc.start.offset);
       const post = code.substring(loc.end.offset);

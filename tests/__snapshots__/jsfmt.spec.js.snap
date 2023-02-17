@@ -1,5 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`newLine.vue 1`] = `
+<script>
+export default {
+  components: {
+
+  },
+  props: {
+
+  },
+  computed: {
+
+  },
+  data() {
+
+  },
+  watch: {
+
+  },
+  created() {
+
+  },
+  methods: {
+
+  },
+};
+</script>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<script>
+export default {
+  components: {},
+  props: {},
+  data() {},
+  computed: {},
+  methods: {},
+  watch: {},
+  created() {},
+};
+</script>
+
+`;
+
 exports[`sfc.vue 1`] = `
 <script>
 export default {
